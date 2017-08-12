@@ -5,8 +5,271 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Andy Murphy | Web Design</title>
+  <link rel="stylesheet" type="text/css" href="css/app.min.css">
 </head>
 <body>
+<!-- Start of wrapper -->
+<div class="wrapper">
+
+  <!-- Start of header -->
+  <header role="banner">
+    <!-- Start of navigation -->
+    <nav role="navigation" class="card">
+      <div class="logo">
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.47 28.81"><title>logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M67,2.38A14.4,14.4,0,0,0,47.9,5.31a14,14,0,0,0-3.24-2.93A14.4,14.4,0,0,0,25.57,5.31a14,14,0,0,0-3.24-2.93,14.41,14.41,0,1,0-7.92,26.44,14.31,14.31,0,0,0,7.92-2.38v2.38h6.48V14.41a7.92,7.92,0,0,1,15.85,0V28.81h6.48V14.41a7.92,7.92,0,1,1,15.85,0V28.81h6.48V14.41A14.37,14.37,0,0,0,67,2.38Zm-52.58,20a7.92,7.92,0,1,1,7.92-7.92A7.92,7.92,0,0,1,14.41,22.33Z"/></g></g>
+          </svg>
+        </a>
+      </div>
+      <!-- Start of hamburger nav icon -->
+      <div class="nav-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- End of hamburger nav icon -->
+      <ul class="main-nav">
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <!-- End of navigation -->
+  </header>
+  <!-- End of header -->
+
+  <!-- Start of main content -->
+  <main role="main">
+
+  <!-- Start of gallery -->
+  <section class="card" role="region" aria-label="portfolio-gallery">
+    <h1>Portfolio</h1>
+    <p>My portfolio showcases the projects built whilst undertaking the <a href="https://teamtreehouse.com/techdegree" target="_blank">Treehouse Techdegree</a>.</p>
+    <!-- Start of gallery -->
+    <div class="gallery">
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project3-@2x.png 2x,
+                    img/thumbnails/thumb-project3-@1x.png 1x"
+            src="img/thumbnails/thumb-project3-@2x.png"
+            alt="Screenshot of a modern and minimal web form.">
+          <div class="side-b">
+            <h3>Web form</h3>
+            <p>A clean and responsive web form with states that put the focus on usability.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project4-@2x.png 2x,
+                    img/thumbnails/thumb-project4-@1x.png 1x"
+            src="img/thumbnails/thumb-project4-@2x.png"
+            alt="Screenshot of a simple image gallery website">
+          <div class="side-b">
+            <h3>Interactive Gallery</h3>
+            <p>A simple gallery, with live filter and a lightbox built with JS.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project5-@2x.png 2x,
+                    img/thumbnails/thumb-project5-@1x.png 1x"
+            src="img/thumbnails/thumb-project5-@2x.png"
+            alt="Screenshot of flat design personal portfolio.">
+          <div class="side-b">
+            <h3>Sass Refactor</h3>
+            <p>Refactored a responsive portfolio site with Sass.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>sass</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project6-@2x.png 2x,
+                    img/thumbnails/thumb-project6-@1x.png 1x"
+            src="img/thumbnails/thumb-project6-@2x.png"
+            alt="Screenshot of simple web page about Corgi's">
+          <div class="side-b">
+            <h3>SVGs</h3>
+            <p>Using SVGs to reduce load, increase responsiveness and add fun animations.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>svg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project7-@2x.png 2x,
+                    img/thumbnails/thumb-project7-@1x.png 1x"
+            src="img/thumbnails/thumb-project7-@2x.png"
+            alt="Screenshot of web video player with transcript">
+          <div class="side-b">
+            <h3>Video Player</h3>
+            <p>Using the awesome video element to create an interactive video player.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project8-@2x.png 2x,
+                    img/thumbnails/thumb-project8-@1x.png 1x"
+            src="img/thumbnails/thumb-project8-@2x.png"
+            alt="Screenshot of a ficticious band's website">
+          <div class="side-b">
+            <h3>Accessibility</h3>
+            <p>Improving accessibility through symantic HTML and smart design choices.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project9-@2x.png 2x,
+                    img/thumbnails/thumb-project9-@1x.png 1x"
+            src="img/thumbnails/thumb-project9-@2x.png"
+            alt="Mock-up of a web application dashboard with charts and user activity feed">
+          <div class="side-b">
+            <h3>Web App</h3>
+            <p>I created a clean web app dashboard using Chart.js, as well as AJAX to generate random users.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>js</p>
+              <p>ajax</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project10-@2x.png 2x,
+                    img/thumbnails/thumb-project10-@1x.png 1x"
+            src="img/thumbnails/thumb-project10-@2x.png"
+            alt="Screenshot of a simple website showing a user's github repositories as cards.">
+          <div class="side-b">
+            <h3>Public API</h3>
+            <p>A web app hooked up with Github's awesome API to search for user and see their repos.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>js</p>
+              <p>ajax</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="photo">
+          <img class="side-a"
+            srcset="img/thumbnails/thumb-project11-@2x.png 2x,
+                    img/thumbnails/thumb-project11-@1x.png 1x"
+            src="img/thumbnails/thumb-project11-@2x.png"
+            alt="Screenshot of a simple website showing a user's github repositories as cards.">
+          <div class="side-b">
+            <h3>Optimization</h3>
+            <p>Reducing requests and load speed for a super fast site with the help of gulp.</p>
+            <div class="photo-links">
+              <a href="#">view</a>
+              <a href="#">github</a>
+            </div>
+            <div class="photo-skills">
+              <p>html5</p>
+              <p>css3</p>
+              <p>js</p>
+              <p>ajax</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of gallery -->
+  </section>
+  <!-- End of gallery -->
+
+  <!-- Start of about section -->
+
   
+
+  <!-- End of about section -->
+
+
+
+
+  </main>
+  <!-- End of main content -->
+
+<!-- End of wrapper -->
+</div>
+
+<!-- Start of scripts include -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<!-- End of scripts include -->
+
 </body>
 </html>
