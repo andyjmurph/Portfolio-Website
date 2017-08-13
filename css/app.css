@@ -425,7 +425,7 @@ Helpers
 .card, .main-nav {
   margin-top: 1.5625em; }
 
-.card {
+.card, .skills span {
   border-radius: 2.5px; }
 
 .card, .photo, .profile-pic {
@@ -489,7 +489,8 @@ h4 {
   font-family: "Hind", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0; }
 
-p {
+p,
+span {
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 400;
@@ -818,7 +819,7 @@ nav {
 
 #treehouse {
   background: #64ce83; }
-  #treehouse h1, #treehouse p {
+  #treehouse h1, #treehouse p, #treehouse span {
     color: #fff; }
   #treehouse h1 {
     margin-top: 0; }
@@ -844,36 +845,45 @@ nav {
   fill: #fff;
   width: 100%; }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #e2ebf0, rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #e2ebf0, rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), #e2ebf0, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #e2ebf0, rgba(255, 255, 255, 0)); }
+
 .treehouse-stats {
-  justify-content: space-around;
-  align-items: flex-end; }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
 
-.treehouse-points,
-.treehouse-badge {
-  width: 40%; }
-
-#treehouse .treehouse-points p {
-  color: #319b50;
-  margin: 0; }
-  #treehouse .treehouse-points p:nth-child(2) {
-    letter-spacing: 1em; }
-
-.treehouse-points p span {
-  font-size: 3em;
-  line-height: 1.5;
+.treehouse-stats p {
+  font-size: 3.25em;
+  line-height: 1;
   font-weight: 700;
-  color: #fff; }
-
-#treehouse .treehouse-badge {
-  text-align: center; }
-  #treehouse .treehouse-badge p {
+  color: #fff;
+  position: relative; }
+  .treehouse-stats p span {
+    font-size: 1rem;
     color: #319b50;
-    margin: 0;
-    letter-spacing: 1px; }
+    position: absolute;
+    bottom: -1.25em;
+    right: 0; }
 
-.treehouse-badge img {
-  max-width: 4.6875em;
-  margin: 0 auto; }
+.skills {
+  text-align: right;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+
+.skills span {
+  padding: 0.3125em;
+  margin: 0.3125em;
+  background: #319b50;
+  font-weight: 700;
+  color: #64ce83; }
 
 footer .card {
   background: #707e81;
