@@ -513,6 +513,16 @@ a {
 Base styles
 ==============================
 */
+@keyframes grow {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(0.8); }
+  40% {
+    transform: scale(1.1); }
+  60% {
+    transform: scale(0.9); } }
+
 nav {
   position: relative; }
   @media (min-width: 768px) {
@@ -521,8 +531,13 @@ nav {
       justify-content: space-between;
       align-items: center; } }
 
+.svg-logo {
+  fill: #64ce83; }
+
 .logo {
   width: 3.5em; }
+  .logo:hover {
+    animation: grow .5s ease-in-out; }
 
 .main-nav {
   display: none;
@@ -732,10 +747,14 @@ nav {
     justify-content: space-between; } }
 
 @media (min-width: 768px) {
-  #treehouse,
-  #about,
-  #contact {
-    flex: 1; } }
+  .flex-col {
+    width: 65%;
+    display: flex;
+    flex-direction: column; } }
+
+#about,
+#treehouse {
+  flex: 1; }
 
 #contact {
   background: #cfd9df;
@@ -749,11 +768,16 @@ nav {
   background: url("../img/profile-bg.jpg") no-repeat bottom left, rgba(255, 255, 255, 0.9);
   background-blend-mode: overlay;
   text-align: center; }
+  @media (min-width: 768px) {
+    #contact {
+      width: 32.5%; } }
 
 .profile-pic {
   max-width: 125px;
   margin: 0.9375em auto;
   border-radius: 50%; }
+  .profile-pic:hover {
+    animation: grow .6s ease-in-out; }
 
 .social-icons {
   display: flex;
@@ -850,5 +874,17 @@ nav {
 .treehouse-badge img {
   max-width: 4.6875em;
   margin: 0 auto; }
+
+footer .card {
+  background: #707e81; }
+  footer .card p {
+    margin: 0;
+    color: #e2ebf0;
+    text-align: center; }
+  footer .card a {
+    color: #e2ebf0;
+    transition: color .3s ease-out; }
+    footer .card a:hover {
+      color: white; }
 
 /*# sourceMappingURL=app.css.map */
