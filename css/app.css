@@ -725,7 +725,19 @@ nav {
     .photo-skills p {
       font-size: .6rem; } }
 
-#about {
+@media (min-width: 768px) {
+  .about-and-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  #treehouse,
+  #about,
+  #contact {
+    flex: 1; } }
+
+#contact {
   background: #cfd9df;
   background: -moz-linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #cfd9df), color-stop(100%, #e2ebf0));
@@ -758,10 +770,13 @@ nav {
 .social-icons svg:hover .background-circle {
   fill: #64ce83; }
 
+.social-icons svg:active .background-circle {
+  fill: #37ae5a; }
+
 .twitter,
 .linkedin,
 .github {
-  fill: #e2ebf0; }
+  fill: #fff; }
 
 .contact-btn {
   display: block;
@@ -769,12 +784,71 @@ nav {
   margin: 0 auto 1.25em;
   padding: 0.625em;
   border-radius: 1.5625em;
-  background: #f74545;
+  background: #ff6347;
   color: #fff;
   text-transform: uppercase;
   transition: background .5s ease-out; }
   .contact-btn:hover {
     color: #fff;
-    background: #cd0909; }
+    background: #e02200; }
+
+#treehouse {
+  background: #64ce83; }
+  #treehouse h1, #treehouse p {
+    color: #fff; }
+  #treehouse h1 {
+    margin-top: 0; }
+  #treehouse a {
+    color: #319b50;
+    transition: color .3s ease-out; }
+    #treehouse a:hover {
+      color: #25743c; }
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+#treehouse svg {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin-top: -0.625em;
+  margin-left: -0.9375em; }
+
+.treehouse {
+  fill: #fff;
+  width: 100%; }
+
+.treehouse-stats {
+  justify-content: space-around;
+  align-items: flex-end; }
+
+.treehouse-points,
+.treehouse-badge {
+  width: 40%; }
+
+#treehouse .treehouse-points p {
+  color: #319b50;
+  margin: 0; }
+  #treehouse .treehouse-points p:nth-child(2) {
+    letter-spacing: 1em; }
+
+.treehouse-points p span {
+  font-size: 3em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff; }
+
+#treehouse .treehouse-badge {
+  text-align: center; }
+  #treehouse .treehouse-badge p {
+    color: #319b50;
+    margin: 0;
+    letter-spacing: 1px; }
+
+.treehouse-badge img {
+  max-width: 4.6875em;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=app.css.map */
