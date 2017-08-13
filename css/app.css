@@ -689,16 +689,14 @@ nav {
   text-align: center; }
 
 .side-b h3 {
-  margin: 0.625em 0 0 0; }
+  margin: 0; }
   @media (min-width: 1024px) {
     .side-b h3 {
       margin-top: 0.3125em; } }
 
 .side-b p {
-  margin: 0; }
-  @media (min-width: 768px) {
-    .side-b p {
-      font-size: .8rem; } }
+  margin: 0;
+  font-size: .8rem; }
 
 .photo-links {
   text-align: center;
@@ -706,7 +704,7 @@ nav {
   .photo-links a {
     display: inline-block;
     min-width: 100px;
-    margin: 0.625em 0.625em 0 0.625em;
+    margin: 0.3125em 0.3125em 0 0.3125em;
     padding: 0.3125em;
     background: #319b50;
     border-radius: 1.5625em;
@@ -714,7 +712,8 @@ nav {
     transition: background .3s ease-out; }
     @media (min-width: 768px) {
       .photo-links a {
-        font-size: .8rem; } }
+        font-size: .8rem;
+        margin: 0.625em 0.625em 0 0.625em; } }
     .photo-links a:hover {
       background: #25743c;
       color: #64ce83; }
@@ -723,23 +722,16 @@ nav {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  right: 0.625em;
-  bottom: 0.625em; }
-  @media (min-width: 1024px) {
-    .photo-skills {
-      right: 0.3125em;
-      bottom: 0.3125em; } }
+  right: 0.3125em;
+  bottom: 0.3125em; }
 
 .photo-skills p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   line-height: 1.5;
   font-weight: 700;
   color: #319b50;
   text-transform: uppercase;
   margin: 0 0 0 0.3125em; }
-  @media (min-width: 768px) {
-    .photo-skills p {
-      font-size: .6rem; } }
 
 @media (min-width: 768px) {
   .about-and-contact {
