@@ -876,7 +876,10 @@ nav {
   margin: 0 auto; }
 
 footer .card {
-  background: #707e81; }
+  background: #707e81;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   footer .card p {
     margin: 0;
     color: #e2ebf0;
