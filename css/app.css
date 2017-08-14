@@ -414,7 +414,8 @@ Helpers
   margin: 0 auto; }
 
 .wrapper {
-  width: 95%; }
+  width: 95%;
+  max-width: 1300px; }
 
 .main-nav a {
   padding: 0.3125em; }
@@ -453,7 +454,6 @@ body {
   background: -o-linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
   background: -ms-linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
   background: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$geyser', endColorstr='$catskill-white', GradientType=1 );
   padding-bottom: 1.5625em; }
 
 ul {
@@ -757,7 +757,6 @@ nav {
   background: -o-linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
   background: -ms-linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
   background: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$geyser', endColorstr='$catskill-white', GradientType=1 );
   background: url("../img/profile-bg.jpg") no-repeat bottom left, rgba(255, 255, 255, 0.9);
   background-blend-mode: overlay;
   text-align: center; }
